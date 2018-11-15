@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imagebox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/new_bread" />
+    <TextView
+        android:id="@+id/textbox"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:text="  신제품    매콩 출시"
+        android:textColor="#ffffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center|right"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+
+</RelativeLayout>

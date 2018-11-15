@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff503d37">
+
+    <LinearLayout
+        android:id="@+id/topButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true">
+        <Button
+            android:id="@+id/mapButton_01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff9d8a84"
+            android:layout_margin="5dp"
+            android:text="티티팬 속초 미시령로점"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:onClick="onClickMapButton_01"/>
+        <Button
+            android:id="@+id/mapButton_02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff9d8a84"
+            android:layout_margin="5dp"
+            android:text="티티팬 속초 중앙로점"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:onClick="onClickMapButton_02"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:id="@+id/midImage2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:layout_below="@+id/topButton">
+
+            <ImageView
+                android:id="@+id/map_image2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/titipan_mid"
+                android:scaleType="centerCrop"/>
+
+            <Button
+                android:id="@+id/linkbtn_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff9d8a84"
+                android:text="Google 지도로 보기"
+                android:padding="5dp"
+                android:textColor="#ffffffff"
+                android:gravity="center|center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:onClick="onProductLink02"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/midImage1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:layout_below="@+id/topButton">
+            <ImageView
+                android:id="@+id/map_image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/titipan_misiryung"
+                android:scaleType="centerCrop"/>
+
+            <Button
+                android:id="@+id/linkbtn_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff9d8a84"
+                android:text="Google 지도로 보기"
+                android:padding="5dp"
+                android:textColor="#ffffffff"
+                android:gravity="center|center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:onClick="onProductLink01"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

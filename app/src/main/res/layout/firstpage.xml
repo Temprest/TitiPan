@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        app:cardCornerRadius="3dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#30999999">
+            <ImageView
+                android:id="@+id/ViewImage1"
+                android:layout_width="190dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/menu_1"/>
+            <TextView
+                android:layout_toRightOf="@+id/ViewImage1"
+                android:id="@+id/ViewText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:text="상품 명 : 매콩"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_toRightOf="@+id/ViewImage1"
+                android:layout_below="@+id/ViewText1"
+                android:id="@+id/ViewText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11가지의 천연 향신료로 깊고 풍부한 티티팬만의 스파이시 칠리빵 "
+                android:textSize="11sp"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ff000000">
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff503d37"
+            android:text="메뉴 보러 가기"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:onClick="button01_click"/>
+        <Button
+            android:id="@+id/button02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ff9d8a84"
+            android:text="티티팬 소개"
+            android:textColor="#ff282828"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:onClick="button02_click"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/oven_1"/>
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:background="#ff503d37"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="갓 구운 빵을 만나는 시간"
+                android:textSize="15dp"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:text="오전 9시 30분, 오후 2시"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                />
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:text="다음 빵은 8시에 완성!"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_alignParentTop="true" />-->
+
+    </RelativeLayout>
+</LinearLayout>
